@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayByPhone</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="w-full mx-auto ">
+
+    <div class="w-full bg-gray-100">
+        <!-- NavBar Container  -->
+        <div class="flex flex-row justify-between items-center h-[60px] w-full py-0 px-[20px]">
+            <img src="../../Asserts//img/logo.svg" alt="" width="180">
+            <img src="../../Asserts/img/menuBtn.svg" width="40px">
+        </div>
+    </div>
+
+
+    <!-- Page Content -->
+
+    <div class="text-center greenbg text-white py-4 text-2xl">
+        Park
+    </div>
+    <div class="h-32 flex items-center justify-center">
+        <img src="../../Asserts/img/location.png" class="h-[50px]" alt="">
+    </div>
+    
+    <form id="parkingForm" action="../Payment/Payment.html" method="GET" class="flex flex-col gap-3 mt-2 ml-2">
+        <p class="text-[#312e32]">Select a parking duration</p>
+
+        <label for="licenseNum">Select duration</label>
+        <input
+            class="w-full px-4 py-1 border text-[#4d4d4d] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0 transition ease-in-out duration-150 placeholder-gray-600"
+            type="number" placeholder="" name="licenseNum" id="licenseNum" autocomplete="off" required>
+
+        <button id="vehicleDropdownBtn"
+            class="w-full px-4 py-1 border text-[#4d4d4d] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0 transition ease-in-out duration-150 placeholder-gray-600 flex flex-row justify-between">
+            <span>Time Unit</span>
+            <img src="../../Asserts/img/doubleArrow.png" width="20px" height="1px" alt="Dropdown Arrow">
+        </button>
+        
+        <input type="hidden" name="timeDuration" id="timeDuration" value="" required>
+        <div class="text-[#312e32] flex gap-2 flex-col">
+            <p class=" text-[14px] poppins-semibold" >Parking time Limit</p>
+            <ul class="list-disc ml-4">
+                <li>Upto 12 months, 9:20 PM - 9:20 AM</li>
+            </ul>
+        </div>
+
+        <div class="mt-[5px] w-full mb-[50px]">
+            <a href="../Location/Location.html">
+                <button type="submit" class="confirmBtn w-2/3">
+                    Continue
+                </button>
+            </a>
+        </div>
+
+    </form>
+
+    <!-- Popup Modal -->
+    <div id="vehicleDropdownMenu"
+        class="hidden fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50">
+        <ul class="bg-[#403d42] rounded-lg py-4 text-white text-nowrap divide-y divide-gray-600 w-2/3 shadow-lg">
+            <li class="px-4 py-2 hover:bg-gray-700 cursor-pointer flex gap-2 items-center" data-value="Time Unit">
+                <div class="w-4">
+                    <img class="tick hidden" src="../../Asserts/img/checks.png" />
+                </div>
+                Time Unit
+            </li>
+            <li class="px-4 py-2 hover:bg-gray-700 cursor-pointer flex gap-2 items-center" data-value="Minutes">
+                <div class="w-4">
+                    <img class="tick hidden" src="../../Asserts/img/checks.png" />
+                </div>
+                Minutes
+            </li>
+            <li class="px-4 py-2 hover:bg-gray-700 cursor-pointer flex gap-2 items-center" data-value="Hours">
+                <div class="w-4">
+                    <img class="tick hidden" src="../../Asserts/img/checks.png" />
+                </div>
+                Hours
+            </li>
+            <li class="px-4 py-2 hover:bg-gray-700 cursor-pointer flex gap-2 items-center" data-value="Days">
+                <div class="w-4">
+                    <img class="tick hidden" src="../../Asserts/img/checks.png" />
+                </div>
+                Days
+            </li>
+            <li class="px-4 py-2 hover:bg-gray-700 cursor-pointer flex gap-2 items-center" data-value="Weeks">
+                <div class="w-4">
+                    <img class="tick hidden" src="../../Asserts/img/checks.png" />
+                </div>
+                Weeks
+            </li>
+            <li class="px-4 py-2 hover:bg-gray-700 cursor-pointer flex gap-2 items-center" data-value="Months">
+                <div class="w-4">
+                    <img class="tick hidden" src="../../Asserts/img/checks.png" />
+                </div>
+                Months
+            </li>
+        </ul>
+
+
+    </div>
+
+
+    <!-- End of Page Content -->
+
+
+
+    <footer class="px-12 pt-[50px] text-[#a6a6a6] text-[12px] poppins-medium" style="background-color: #4d4d4d;">
+        <img src="../../Asserts/img/white-logo.svg" width="180" alt="">
+        <p class="mt-[25px]">We simplify your journey, so you can <br /> focus on what matters most.</p>
+        <div class="my-[20px]">
+            <img src="../../Asserts/img/g-play.png" width="80px" alt="">
+            <img src="../../Asserts/img/a-store.png" width="80px" alt="">
+        </div>
+        <div class="flex flex-col gap-2">
+            <div class="flex flex-row gap-2">
+                <img src="../../Asserts/img/location.svg" width="10px" alt="">
+                <span>NA</span>
+            </div>
+
+            <div class="flex flex-row gap-2">
+                <img src="../../Asserts/img/support.svg" width="10px" alt="">
+                <span>Support</span>
+            </div>
+
+            <div class="flex flex-row gap-2">
+                <img src="../../Asserts/img/contact.svg" width="10px" alt="">
+                <span>Contact</span>
+            </div>
+
+            <div class="flex flex-row gap-2">
+                <img src="../../Asserts/img/review.svg" width="10px" alt="">
+                <span>Feedback</span>
+            </div>
+            <p>For press enquires</p>
+        </div>
+
+
+
+        <div class="flex flex-wrap ">
+            <!-- Column 1 -->
+            <div class="w-1/2 mt-[30px] flex flex-col gap-1">
+                <h4 class="text-[#ffff]">Products</h4>
+                <p>For Drivers</p>
+                <p>Rights & Rates</p>
+                <p>Cashless parking</p>
+                <p>For Fleets</p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="w-1/2 mt-[30px] flex flex-col gap-1">
+                <h4 class="text-[#ffff]">About us</h4>
+                <p>About PayByPhone</p>
+                <p>Press</p>
+                <p>Careers</p>
+                <p>Meet the Team</p>
+                <p>Stories</p>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="w-1/2 mt-[15px] flex flex-col gap-1">
+                <h4 class="text-[#ffff]">Legal</h4>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Cookie Policy</p>
+                <p>Legal notice</p>
+            </div>
+        </div>
+
+        <div class="py-8 flex flex-row gap-2"> <!-- Social Links  -->
+            <img src="." ../../Asserts/img/twitter.svg" width="15px" alt="">
+            <img src="." ../../Asserts/img/linkedin.svg" width="15px" alt="">
+            <img src="." ../../Asserts/img/insta.svg" width="15px" alt="">
+            <img src="." ../../Asserts/img/youtube.svg" width="15px" alt="">
+            <img src="." ../../Asserts/img/facebook.svg" width="15px" alt="">
+        </div>
+    </footer>
+</body>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+<script src="./location.js"></script>
+
+</html>

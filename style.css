@@ -1,0 +1,243 @@
+:root {
+    --primary-color: #6cc24a;
+    /* Green color */
+    --fade-text-color: rgb(77, 77, 77);
+    /* Faded gray text */
+    --white-color: #fff;
+    /* White color */
+}
+
+* {
+    line-height: "50px";
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fadeText {
+    color: var(--fade-text-color);
+}
+
+#startBtn {
+    padding: 10px 27px;
+    align-self: auto;
+    border-radius: 6px;
+    border: 0;
+    background-color: var(--primary-color);
+    transition: 0.2s;
+    font-family: Fouconmd, sans-serif;
+    color: var(--white-color);
+    font-size: 18px;
+    line-height: 110%;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+#workBtn {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 27px;
+    font-family: Fouconmd, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: flex;
+    position: static;
+}
+.confirmBtn{
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 27px;
+    font-family: Fouconmd, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: flex;
+    position: static;
+}
+.greenbg{
+    background-color: var(--primary-color);
+}
+
+.greenLink {
+    color: var(--primary-color);
+    display: inline;
+    text-decoration: none; 
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 2px; 
+    transition: border-color 0.2s ease; 
+    line-height: 20px;
+}
+
+.greenLink:hover {
+    border-color: var(--primary-color); /* Keep the same color on hover */
+}
+.arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 8px;
+    vertical-align: middle; /* Corrected */
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+}
+
+.arrow-up {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 8px;
+    vertical-align: middle;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #333;
+}
+
+/*                                            Font                           */
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+/* Style for the entire scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+/* Background of the scrollbar */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the thumb when hovered */
+}

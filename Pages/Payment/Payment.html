@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayByPhone</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body class="w-full mx-auto ">
+
+    <div class="w-full bg-gray-100">
+        <!-- NavBar Container  -->
+        <div class="flex flex-row justify-between items-center h-[60px] w-full py-0 px-[20px]">
+            <img src="../../Asserts//img/logo.svg" alt="" width="180">
+            <img src="../../Asserts/img/menuBtn.svg" width="40px">
+        </div>
+    </div>
+
+
+    <!-- Page Content -->
+
+    <div class="text-center greenbg text-white py-4 text-2xl">
+        Payment
+    </div>
+
+    <div class="w-full mt-2">
+        <div class="text-center text-[12px]">
+            <p> No payment method on file. Please add a payment <br>
+                method before reviewing your purchase.</p>
+            </p>
+            <p class="mt-2">Add your pavment card</p>
+        </div>
+        <div class="flex items-center justify-center">
+            <img src="../../Asserts/img/applePay.png" class="h-[50px]" alt="">
+        </div>
+
+        <form id="PaymentForm" action="" method="" class="flex flex-col gap-3 mt-2 mx-2">
+
+            <label for="cardName">Name on Card</label>
+            <input
+                class="w-full px-4 py-1 border text-[#4d4d4d] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0 transition ease-in-out duration-150 placeholder-gray-600"
+                type="text" name="cardName" id="cardName" required autocomplete="off">
+
+            <label for="cardNum">Card Number</label>
+            <input
+                class="w-full px-4 py-1 border text-[#4d4d4d] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0 transition ease-in-out duration-150 placeholder-gray-600"
+                type="text" name="cardNum" id="cardNum" required autocomplete="off">
+
+            <label for="expiryDate">Expiry Date (MM/YY)</label>
+            <input
+                class="w-full px-4 py-1 border text-[#4d4d4d] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0 transition ease-in-out duration-150 placeholder-gray-600"
+                type="text" name="expiryDate" id="expiryDate" required pattern="(0[1-9]|1[0-2])\/\d{2}"
+                title="Format: MM/YY" autocomplete="off">
+
+            <label for="cvv">CVV</label>
+            <input
+                class="w-full px-4 py-1 border text-[#4d4d4d] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0 transition ease-in-out duration-150 placeholder-gray-600"
+                type="number" name="cvv" id="cvv" required autocomplete="off">
+
+            <label for="phone">Phone Number</label>
+            <input
+                class="w-full px-4 py-1 border text-[#4d4d4d] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0 transition ease-in-out duration-150 placeholder-gray-600"
+                type="tel" name="phone" id="phone" required autocomplete="off">
+
+            <div class="mt-[5px] w-full mb-[50px]">
+                <button id="showPopup" type="submit" class="confirmBtn w-full">
+                    Agree & Add
+                </button>
+            </div>
+
+            <!-- Popup Modal -->
+            <div id="popup" class="hidden fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50">
+                <div class="bg-white w-[90%] flex flex-col justify-center items-center max-w-md p-4 rounded-md">
+                    
+                    <img src="../../Asserts/img/mail.svg" width="50px" alt="">
+                    <div class="text-center w-full ">
+                        <p class="poppins-semibold  text-[20px]">Thank you</p>
+                        <p class="poppins-normal text-[14px]">for sharing details</p>
+                    </div>
+                    <div class="flex w-full items-center justify-center border p-2 space-x-2">
+                        <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hammadasgharmuhammad@gmail.com&su=PayOnPhone&body=Code%20is%20:"  -->
+                        <a href="mailto:hammadasgharm@gmail.com" 
+                           class="greenLink">
+                            Send Code
+                        </a>
+
+                        <img src="../../Asserts/img/link.svg" width="20px" alt="">
+                    </div>
+                    
+                    <!-- <a href="" target="_blank">Contact</a> -->
+                    <button id="closePopup"></button>
+                </div>
+            </div>
+        </form>
+
+
+
+        <footer class="px-12 pt-[50px] text-[#a6a6a6] text-[12px] poppins-medium" style="background-color: #4d4d4d;">
+            <img src="../../Asserts/img/white-logo.svg" width="180" alt="">
+            <p class="mt-[25px]">We simplify your journey, so you can <br /> focus on what matters most.</p>
+            <div class="my-[20px]">
+                <img src="../../Asserts/img/g-play.png" width="80px" alt="">
+                <img src="../../Asserts/img/a-store.png" width="80px" alt="">
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="flex flex-row gap-2">
+                    <img src="../../Asserts/img/location.svg" width="10px" alt="">
+                    <span>NA</span>
+                </div>
+
+                <div class="flex flex-row gap-2">
+                    <img src="../../Asserts/img/support.svg" width="10px" alt="">
+                    <span>Support</span>
+                </div>
+
+                <div class="flex flex-row gap-2">
+                    <img src="../../Asserts/img/contact.svg" width="10px" alt="">
+                    <span>Contact</span>
+                </div>
+
+                <div class="flex flex-row gap-2">
+                    <img src="../../Asserts/img/review.svg" width="10px" alt="">
+                    <span>Feedback</span>
+                </div>
+                <p>For press enquires</p>
+            </div>
+
+
+
+            <div class="flex flex-wrap ">
+                <!-- Column 1 -->
+                <div class="w-1/2 mt-[30px] flex flex-col gap-1">
+                    <h4 class="text-[#ffff]">Products</h4>
+                    <p>For Drivers</p>
+                    <p>Rights & Rates</p>
+                    <p>Cashless parking</p>
+                    <p>For Fleets</p>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="w-1/2 mt-[30px] flex flex-col gap-1">
+                    <h4 class="text-[#ffff]">About us</h4>
+                    <p>About PayByPhone</p>
+                    <p>Press</p>
+                    <p>Careers</p>
+                    <p>Meet the Team</p>
+                    <p>Stories</p>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="w-1/2 mt-[15px] flex flex-col gap-1">
+                    <h4 class="text-[#ffff]">Legal</h4>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookie Policy</p>
+                    <p>Legal notice</p>
+                </div>
+            </div>
+
+            <div class="py-8 flex flex-row gap-2"> <!-- Social Links  -->
+                <img src="../../Asserts/img/twitter.svg" width="15px" alt="">
+                <img src=" ../../Asserts/img/linkedin.svg" width="15px" alt="">
+                <img src="../../Asserts/img/insta.svg" width="15px" alt="">
+                <img src="../../Asserts/img/youtube.svg" width="15px" alt="">
+                <img src="../../Asserts/img/facebook.svg" width="15px" alt="">
+            </div>
+        </footer>
+</body>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+
+
+<script src="./payment.js"></script>
+
+</html>

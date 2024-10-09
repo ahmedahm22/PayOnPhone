@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayByPhone</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="w-full mx-auto ">
+    <!-- Dropup Button -->
+    <!-- <div class="fixed bottom-0 left-0 text-[15px]">
+        <div class="relative">
+            <button id="dropupButton"
+                class="text-gray-900 bg-white px-2 py-2 w-28 shadow-lg flex justify-between items-center">
+                <span id="selectedLanguage">English</span>
+                <div id="arrow" class="arrow-down"></div>
+            </button>
+
+            <div id="dropupMenu" class="hidden absolute bottom-8 left-0 w-28 bg-white">
+                <ul id="languageList" class="py-2 text-left text-sm">
+                    <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">English</li>
+                    <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Español</li>
+                    <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Français</li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <a href="mailto:hammadasgharmuhammad@gmail.com?subject=Your%20Subject&body=Your%20message%20here">Contact</a> -->
+
+    <div class="w-full bg-gray-100">
+        <!-- NavBar Container  -->
+        <div class="flex flex-row justify-between items-center h-[60px] w-full py-0 px-[20px]">
+            <img src="./Asserts//img/logo.svg" alt="" width="180">
+            <img src="./Asserts/img/menuBtn.svg" width="40px">
+        </div>
+    </div>
+
+    <!-- Section # 1 -->
+    <section class="py-16 px-12" style="background-color: #4d4d4d;"> <!-- Hero Section  -->
+
+        <!-- <form class="text-white" id="parkingForm"> 
+            <h1 class="text-[50px] poppins-semibold">Park now</h1>
+            <p class="pt-2 py-4">Search by location number</p>
+            <input
+                class="w-full px-4 py-2 mb-[27px] h-[40px] border text-[#4d4d4d] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0  transition ease-in-out duration-150  placeholder-gray-600"
+                type="text" placeholder="Location number" name="" id="" autocomplete="off">
+
+                <button id="startBtn" type="submit">
+                    Start Parking
+                </button>
+        </form> -->
+
+        <form class="text-white" id="parkingForm">
+            <h1 class="text-[50px] poppins-semibold">Park now</h1>
+            <p class="pt-2 py-4">Search by location number</p>
+            <input
+                class="w-full px-4 py-2 mb-[27px] h-[40px] border text-[#4d4d4d] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-0 transition ease-in-out duration-150 placeholder-gray-600"
+                type="text" placeholder="Location number" name="location" id="location" autocomplete="off" required>
+            <button id="startBtn" type="submit" class="bg-green-500 text-white px-4 py-2 rounded">Start Parking</button>
+        </form>
+    </section>
+
+
+
+    <!-- Section # 2 -->
+    <section class="px-12 mt-[100px]">
+        <p class="text-[40px] poppins-bold fadeText">We're here to <span
+                class="text-[#6cc24a] poppins-bold fadeText">simplify your journey</span></p>
+        <p class="mt-3 poppins-regular text-[#555555]">We know you have better things to worry about than paying for
+            your parking. That’s why our smart, intuitive technology delivers a world-class digital payment experience
+            for millions of drivers.</p>
+        <div class="mt-[25px]">
+            <button id="workBtn">
+                How it works
+            </button>
+        </div>
+    </section>
+
+    <!-- Section # 3 -->
+    <section class="px-12 my-[100px]">
+        <img src="./Asserts/img/world.png" class="mb-[40px]" alt="">
+        <p class="text-[28px] poppins-bold fadeText">We’re <span
+                class="text-[#6cc24a] poppins-bold fadeText">everywhere</span> you need us to be</p>
+        <p class="mt-3 poppins-regular text-[#555555]">Work. Gym. Class. Shopping. PayByPhone is with you on your
+            journey each day. We are available in over 1,200 cities across North America and Europe, including
+            universities and colleges. More than 70 million all-time users choose us to simplify their journey.</p>
+
+        <div class="mt-[25px]">
+            <button id="workBtn">
+                Download now
+            </button>
+        </div>
+    </section>
+
+    <!-- Section # 4 -->
+    <section class="px-12 my-[100px] fadeText">
+        <h1 class="poppins-bold text-[30px]"><span class="text-[#6cc24a] poppins-bold fadeText">PayByPhone</span> is
+            simple to use</h1>
+        <div class="mt-10 flex flex-col gap-20">
+            <!-- Flex Rows -->
+            <div class="flex flex-col">
+                <img src="./Asserts/img/mobile.png" width="70" height="70" alt="">
+                <span class="mt-3 popin-medium text-[21px] fadeText">Easy to register</span>
+                <p class="mt-2 poppins-regular">Unlock added benefits when you register on our app. Registering is
+                    simple and straightforward. It takes less than 30 seconds.</p>
+                <div class="flex">
+                    <a class="greenLink mt-[20px] poppins-semibold" href="https://m2.paybyphone.com/parking">Register
+                        now &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Flex Rows -->
+            <div class="flex flex-col">
+                <img src="./Asserts/img/card.png" width="70" height="70" alt="">
+                <span class="mt-3 popin-medium text-[21px] fadeText">Easy to pay</span>
+                <p class="mt-2 poppins-regular">Connect your credit or debit card to your PayByPhone account, and pay
+                    quickly and securely. Or, where available, opt for Google Pay or Apple Pay to complete transactions.
+                </p>
+                <div class="flex">
+                    <a class="greenLink mt-[20px] poppins-semibold" href="https://m2.paybyphone.com/parking">Pay
+                        now &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Flex Rows -->
+            <div class="flex flex-col">
+                <img src="./Asserts/img/time.png" width="70" height="70" alt="">
+                <span class="mt-3 popin-medium text-[21px] fadeText">Extend your session</span>
+                <p class="mt-2 poppins-regular">Meeting run over? Want to shop for longer? No need to run back to the
+                    car to feed the meter. Simply extend your session via our app.</p>
+                <div class="flex">
+                    <a class="greenLink mt-[20px] poppins-semibold" href="https://m2.paybyphone.com/parking">Extend
+                        now &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- Section # 5 -->
+    <footer class="px-12 pt-[50px] text-[#a6a6a6] text-[12px] poppins-medium" style="background-color: #4d4d4d;">
+        <img src="./Asserts/img/white-logo.svg" width="180" alt="">
+        <p class="mt-[25px]">We simplify your journey, so you can <br /> focus on what matters most.</p>
+        <div class="my-[20px]">
+            <img src="./Asserts/img/g-play.png" width="80px" alt="">
+            <img src="./Asserts/img/a-store.png" width="80px" alt="">
+        </div>
+        <div class="flex flex-col gap-2">
+            <div class="flex flex-row gap-2">
+                <img src="./Asserts/img/location.svg" width="10px" alt="">
+                <span>NA</span>
+            </div>
+
+            <div class="flex flex-row gap-2">
+                <img src="./Asserts/img/support.svg" width="10px" alt="">
+                <span>Support</span>
+            </div>
+
+            <div class="flex flex-row gap-2">
+                <img src="./Asserts/img/contact.svg" width="10px" alt="">
+                <span>Contact</span>
+            </div>
+
+            <div class="flex flex-row gap-2">
+                <img src="./Asserts/img/review.svg" width="10px" alt="">
+                <span>Feedback</span>
+            </div>
+            <p>For press enquires</p>
+        </div>
+
+
+
+        <div class="flex flex-wrap ">
+            <!-- Column 1 -->
+            <div class="w-1/2 mt-[30px] flex flex-col gap-1">
+                <h4 class="text-[#ffff]">Products</h4>
+                <p>For Drivers</p>
+                <p>Rights & Rates</p>
+                <p>Cashless parking</p>
+                <p>For Fleets</p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="w-1/2 mt-[30px] flex flex-col gap-1">
+                <h4 class="text-[#ffff]">About us</h4>
+                <p>About PayByPhone</p>
+                <p>Press</p>
+                <p>Careers</p>
+                <p>Meet the Team</p>
+                <p>Stories</p>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="w-1/2 mt-[15px] flex flex-col gap-1">
+                <h4 class="text-[#ffff]">Legal</h4>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Cookie Policy</p>
+                <p>Legal notice</p>
+            </div>
+        </div>
+
+        <div class="py-8 flex flex-row gap-2"> <!-- Social Links  -->
+            <img src="./Asserts/img/twitter.svg" width="15px" alt="">
+            <img src="./Asserts/img/linkedin.svg" width="15px" alt="">
+            <img src="./Asserts/img/insta.svg" width="15px" alt="">
+            <img src="./Asserts/img/youtube.svg" width="15px" alt="">
+            <img src="./Asserts/img/facebook.svg" width="15px" alt="">
+        </div>
+    </footer>
+</body>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+<script src="./script.js"></script>
+
+</html>
